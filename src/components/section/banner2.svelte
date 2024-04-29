@@ -1,10 +1,14 @@
-<section class="text-gray-400 bg-gray-900 body-font">
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+<script>
+  export let color;
+</script>
+
+<section class=" body-font">
+  <div class="container flex flex-wrap px-5 py-24 mx-auto">
     <div
-      class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10"
+      class="flex flex-wrap content-start mt-auto mb-auto -mx-4 lg:w-1/2 sm:w-2/3 sm:pr-10"
     >
-      <div class="w-full sm:p-4 px-4 mb-6">
-        <h1 class="title-font font-medium text-xl mb-2 text-white">
+      <div class="w-full px-4 mb-6 sm:p-4">
+        <h1 class="mb-2 text-xl font-medium title-font {color}">
           Moon hashtag pop-up try-hard offal truffaut
         </h1>
         <div class="leading-relaxed">
@@ -12,32 +16,31 @@
           neutra sustainable fingerstache kickstarter.
         </div>
       </div>
-      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-        <h2 class="title-font font-medium text-3xl text-white">2.7K</h2>
+      <div class="w-1/2 p-4 sm:w-1/2 lg:w-1/4">
+        <h2 class="text-3xl font-medium title-font {color}">2.7K</h2>
         <p class="leading-relaxed">Users</p>
       </div>
-      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-        <h2 class="title-font font-medium text-3xl text-white">1.8K</h2>
+      <div class="w-1/2 p-4 sm:w-1/2 lg:w-1/4">
+        <h2 class="text-3xl font-medium title-font {color}">1.8K</h2>
         <p class="leading-relaxed">Subscribes</p>
       </div>
-      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-        <h2 class="title-font font-medium text-3xl text-white">35</h2>
+      <div class="w-1/2 p-4 sm:w-1/2 lg:w-1/4">
+        <h2 class="text-3xl font-medium title-font {color}">35</h2>
         <p class="leading-relaxed">Downloads</p>
       </div>
-      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-        <h2 class="title-font font-medium text-3xl text-white">4</h2>
+      <div class="w-1/2 p-4 sm:w-1/2 lg:w-1/4">
+        <h2 class="text-3xl font-medium title-font {color}">4</h2>
         <p class="leading-relaxed">Products</p>
       </div>
     </div>
     <div
-      class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0"
+      class="w-full mt-6 overflow-hidden rounded-lg lg:w-1/2 sm:w-1/3 sm:mt-0"
     >
       <img
         class="object-cover object-center w-full h-full"
-        src="https://dummyimage.com/600x300"
+        src="/img/g6.jpg"
         alt="stats"
       />
     </div>
   </div>
 </section>
-GitHub

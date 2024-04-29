@@ -1,15 +1,19 @@
-<section class="text-gray-400 bg-gray-900 body-font">
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+<script>
+  export let color;
+</script>
+
+<section class="body-font">
+  <div class="container flex flex-wrap px-5 py-24 mx-auto">
     <div class="flex flex-wrap w-full">
       <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-        <div class="flex relative pb-12">
+        <div class="relative flex pb-12">
           <div
-            class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            class="absolute inset-0 flex items-center justify-center w-10 h-full"
           >
-            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            <div class="w-1 h-full bg-gray-800 pointer-events-none"></div>
           </div>
           <div
-            class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 inline-flex items-center justify-center text-white relative z-10"
+            class="relative z-10 inline-flex items-center justify-center flex-shrink-0 w-10 h-10 {color} rounded-full"
           >
             <svg
               fill="none"
@@ -24,9 +28,7 @@
             </svg>
           </div>
           <div class="flex-grow pl-4">
-            <h2
-              class="font-medium title-font text-sm text-white mb-1 tracking-wider"
-            >
+            <h2 class="mb-1 text-sm font-medium tracking-wider title-font">
               STEP 1
             </h2>
             <p class="leading-relaxed">
@@ -35,14 +37,14 @@
             </p>
           </div>
         </div>
-        <div class="flex relative pb-12">
+        <div class="relative flex pb-12">
           <div
-            class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            class="absolute inset-0 flex items-center justify-center w-10 h-full"
           >
-            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            <div class="w-1 h-full bg-gray-800 pointer-events-none"></div>
           </div>
           <div
-            class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 inline-flex items-center justify-center text-white relative z-10"
+            class="relative z-10 inline-flex items-center justify-center flex-shrink-0 w-10 h-10 {color} rounded-full"
           >
             <svg
               fill="none"
@@ -57,9 +59,7 @@
             </svg>
           </div>
           <div class="flex-grow pl-4">
-            <h2
-              class="font-medium title-font text-sm text-white mb-1 tracking-wider"
-            >
+            <h2 class="mb-1 text-sm font-medium tracking-wider title-font">
               STEP 2
             </h2>
             <p class="leading-relaxed">
@@ -68,14 +68,14 @@
             </p>
           </div>
         </div>
-        <div class="flex relative pb-12">
+        <div class="relative flex pb-12">
           <div
-            class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            class="absolute inset-0 flex items-center justify-center w-10 h-full"
           >
-            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            <div class="w-1 h-full bg-gray-800 pointer-events-none"></div>
           </div>
           <div
-            class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 inline-flex items-center justify-center text-white relative z-10"
+            class="relative z-10 inline-flex items-center justify-center flex-shrink-0 w-10 h-10 {color} rounded-full"
           >
             <svg
               fill="none"
@@ -91,9 +91,7 @@
             </svg>
           </div>
           <div class="flex-grow pl-4">
-            <h2
-              class="font-medium title-font text-sm text-white mb-1 tracking-wider"
-            >
+            <h2 class="mb-1 text-sm font-medium tracking-wider title-font">
               STEP 3
             </h2>
             <p class="leading-relaxed">
@@ -102,14 +100,14 @@
             </p>
           </div>
         </div>
-        <div class="flex relative pb-12">
+        <div class="relative flex pb-12">
           <div
-            class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            class="absolute inset-0 flex items-center justify-center w-10 h-full"
           >
-            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            <div class="w-1 h-full bg-gray-800 pointer-events-none"></div>
           </div>
           <div
-            class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 inline-flex items-center justify-center text-white relative z-10"
+            class="relative z-10 inline-flex items-center justify-center flex-shrink-0 w-10 h-10 {color} rounded-full"
           >
             <svg
               fill="none"
@@ -125,9 +123,7 @@
             </svg>
           </div>
           <div class="flex-grow pl-4">
-            <h2
-              class="font-medium title-font text-sm text-white mb-1 tracking-wider"
-            >
+            <h2 class="mb-1 text-sm font-medium tracking-wider title-font">
               STEP 4
             </h2>
             <p class="leading-relaxed">
@@ -136,9 +132,9 @@
             </p>
           </div>
         </div>
-        <div class="flex relative">
+        <div class="relative flex">
           <div
-            class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 inline-flex items-center justify-center text-white relative z-10"
+            class="relative z-10 inline-flex items-center justify-center flex-shrink-0 w-10 h-10 {color} rounded-full"
           >
             <svg
               fill="none"
@@ -154,9 +150,7 @@
             </svg>
           </div>
           <div class="flex-grow pl-4">
-            <h2
-              class="font-medium title-font text-sm text-white mb-1 tracking-wider"
-            >
+            <h2 class="mb-1 text-sm font-medium tracking-wider title-font">
               FINISH
             </h2>
             <p class="leading-relaxed">
@@ -167,11 +161,10 @@
         </div>
       </div>
       <img
-        class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-        src="https://dummyimage.com/1200x500"
+        class="object-cover object-center mt-12 rounded-lg lg:w-3/5 md:w-1/2 md:mt-0"
+        src="/img/g52.jpg"
         alt="step"
       />
     </div>
   </div>
 </section>
-GitHub

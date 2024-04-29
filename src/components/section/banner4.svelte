@@ -1,41 +1,42 @@
-<section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+<script>
+  export let color;
+  export let title;
+</script>
+
+<section class="overflow-hidden body-font">
   <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-white">
-        Pricing
-      </h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+    <div class="flex flex-col w-full mb-20 text-center">
+      <h1 class="mb-2 text-3xl font-medium sm:text-4xl title-font">Pricing</h1>
+      <p class="mx-auto text-base leading-relaxed lg:w-2/3">
         Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
       </p>
       <div
-        class="flex mx-auto border-2 border-purple-500 rounded overflow-hidden mt-6"
+        class="flex mx-auto mt-6 overflow-hidden border-2 rounded border-slate-600"
       >
-        <button class="py-1 px-4 bg-purple-500 text-white focus:outline-none"
+        <button class="px-4 py-1 {title} {color} focus:outline-none"
           >Monthly</button
         >
-        <button class="py-1 px-4 text-gray-300 focus:outline-none"
+        <button class="px-4 py-1 text-gray-300 focus:outline-none"
           >Annually</button
         >
       </div>
     </div>
     <div class="flex flex-wrap -m-4">
-      <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+      <div class="w-full p-4 xl:w-1/4 md:w-1/2">
         <div
-          class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden"
+          class="relative flex flex-col h-full p-6 overflow-hidden border-2 border-gray-700 rounded-lg"
         >
-          <h2
-            class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium"
-          >
+          <h2 class="mb-1 text-sm font-medium tracking-widest title-font">
             START
           </h2>
           <h1
-            class="text-5xl text-white pb-4 mb-4 border-b border-gray-800 leading-none"
+            class="pb-4 mb-4 text-5xl leading-none {title} border-b border-gray-800"
           >
             Free
           </h1>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -50,9 +51,9 @@
               </svg>
             </span>Vexillologist pitchfork
           </p>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -67,9 +68,9 @@
               </svg>
             </span>Tumeric plaid portland
           </p>
-          <p class="flex items-center text-gray-400 mb-6">
+          <p class="flex items-center mb-6">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -85,7 +86,7 @@
             </span>Mixtape chillwave tumeric
           </p>
           <button
-            class="flex items-center mt-auto text-white bg-gray-800 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-700 rounded"
+            class="flex items-center w-full px-4 py-2 mt-auto {title} bg-gray-800 border-0 rounded focus:outline-none hover:bg-gray-700"
             >Button
             <svg
               fill="none"
@@ -99,33 +100,31 @@
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-          <p class="text-xs text-gray-400 mt-3">
+          <p class="mt-3 text-xs">
             Literally you probably haven't heard of them jean shorts.
           </p>
         </div>
       </div>
-      <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+      <div class="w-full p-4 xl:w-1/4 md:w-1/2">
         <div
-          class="h-full p-6 rounded-lg border-2 border-purple-500 flex flex-col relative overflow-hidden"
+          class="relative flex flex-col h-full p-6 overflow-hidden border-2 rounded-lg border-slate-600"
         >
           <span
-            class="bg-purple-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl"
+            class="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest {title} {color} rounded-bl"
             >POPULAR</span
           >
-          <h2
-            class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium"
-          >
+          <h2 class="mb-1 text-sm font-medium tracking-widest title-font">
             PRO
           </h2>
           <h1
-            class="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800"
+            class="flex items-center pb-4 mb-4 text-5xl leading-none {title} border-b border-gray-800"
           >
             <span>$38</span>
-            <span class="text-lg ml-1 font-normal text-gray-400">/mo</span>
+            <span class="ml-1 text-lg font-normal">/mo</span>
           </h1>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -140,9 +139,9 @@
               </svg>
             </span>Vexillologist pitchfork
           </p>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -157,9 +156,9 @@
               </svg>
             </span>Tumeric plaid portland
           </p>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -174,9 +173,9 @@
               </svg>
             </span>Hexagon neutra unicorn
           </p>
-          <p class="flex items-center text-gray-400 mb-6">
+          <p class="flex items-center mb-6">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -192,7 +191,7 @@
             </span>Mixtape chillwave tumeric
           </p>
           <button
-            class="flex items-center mt-auto text-white bg-purple-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-purple-600 rounded"
+            class="flex items-center w-full px-4 py-2 mt-auto {title} {color} border-0 rounded focus:outline-none hover:bg-purple-600"
             >Button
             <svg
               fill="none"
@@ -206,29 +205,27 @@
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-          <p class="text-xs text-gray-400 mt-3">
+          <p class="mt-3 text-xs">
             Literally you probably haven't heard of them jean shorts.
           </p>
         </div>
       </div>
-      <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+      <div class="w-full p-4 xl:w-1/4 md:w-1/2">
         <div
-          class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden"
+          class="relative flex flex-col h-full p-6 overflow-hidden border-2 border-gray-700 rounded-lg"
         >
-          <h2
-            class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium"
-          >
+          <h2 class="mb-1 text-sm font-medium tracking-widest title-font">
             BUSINESS
           </h2>
           <h1
-            class="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800"
+            class="flex items-center pb-4 mb-4 text-5xl leading-none {title} border-b border-gray-800"
           >
             <span>$56</span>
-            <span class="text-lg ml-1 font-normal text-gray-400">/mo</span>
+            <span class="ml-1 text-lg font-normal">/mo</span>
           </h1>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -243,9 +240,9 @@
               </svg>
             </span>Vexillologist pitchfork
           </p>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -260,9 +257,9 @@
               </svg>
             </span>Tumeric plaid portland
           </p>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -277,9 +274,9 @@
               </svg>
             </span>Hexagon neutra unicorn
           </p>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -294,9 +291,9 @@
               </svg>
             </span>Vexillologist pitchfork
           </p>
-          <p class="flex items-center text-gray-400 mb-6">
+          <p class="flex items-center mb-6">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -312,7 +309,7 @@
             </span>Mixtape chillwave tumeric
           </p>
           <button
-            class="flex items-center mt-auto text-white bg-gray-800 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-700 rounded"
+            class="flex items-center w-full px-4 py-2 mt-auto {title} bg-gray-800 border-0 rounded focus:outline-none hover:bg-gray-700"
             >Button
             <svg
               fill="none"
@@ -326,29 +323,27 @@
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-          <p class="text-xs text-gray-400 mt-3">
+          <p class="mt-3 text-xs">
             Literally you probably haven't heard of them jean shorts.
           </p>
         </div>
       </div>
-      <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+      <div class="w-full p-4 xl:w-1/4 md:w-1/2">
         <div
-          class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden"
+          class="relative flex flex-col h-full p-6 overflow-hidden border-2 border-gray-700 rounded-lg"
         >
-          <h2
-            class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium"
-          >
+          <h2 class="mb-1 text-sm font-medium tracking-widest title-font">
             SPECIAL
           </h2>
           <h1
-            class="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800"
+            class="flex items-center pb-4 mb-4 text-5xl leading-none {title} border-b border-gray-800"
           >
             <span>$72</span>
-            <span class="text-lg ml-1 font-normal text-gray-400">/mo</span>
+            <span class="ml-1 text-lg font-normal">/mo</span>
           </h1>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -363,9 +358,9 @@
               </svg>
             </span>Vexillologist pitchfork
           </p>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -380,9 +375,9 @@
               </svg>
             </span>Tumeric plaid portland
           </p>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -397,9 +392,9 @@
               </svg>
             </span>Hexagon neutra unicorn
           </p>
-          <p class="flex items-center text-gray-400 mb-2">
+          <p class="flex items-center mb-2">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -414,9 +409,9 @@
               </svg>
             </span>Vexillologist pitchfork
           </p>
-          <p class="flex items-center text-gray-400 mb-6">
+          <p class="flex items-center mb-6">
             <span
-              class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0"
+              class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-gray-500 bg-gray-800 rounded-full"
             >
               <svg
                 fill="none"
@@ -432,7 +427,7 @@
             </span>Mixtape chillwave tumeric
           </p>
           <button
-            class="flex items-center mt-auto text-white bg-gray-800 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-700 rounded"
+            class="flex items-center w-full px-4 py-2 mt-auto {title} bg-gray-800 border-0 rounded focus:outline-none hover:bg-gray-700"
             >Button
             <svg
               fill="none"
@@ -446,7 +441,7 @@
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-          <p class="text-xs text-gray-400 mt-3">
+          <p class="mt-3 text-xs">
             Literally you probably haven't heard of them jean shorts.
           </p>
         </div>
@@ -454,4 +449,3 @@
     </div>
   </div>
 </section>
-GitHub

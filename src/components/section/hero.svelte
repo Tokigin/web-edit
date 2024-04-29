@@ -1,5 +1,10 @@
 <script>
   import Icon from "../section/icon.svelte";
+  import Banner1 from "./banner1.svelte";
+  import Banner2 from "./banner2.svelte";
+  import Banner3 from "./banner3.svelte";
+  import Banner4 from "./banner4.svelte";
+
   let bgcolor = "bg-white";
   let headercolor = "bg-slate-600";
   let logocolor = "text-white";
@@ -13,6 +18,8 @@
   let defaulttitlecolor = "text-black";
   let defaulttextcolor = "text-black";
   let boxes = 4;
+  let heros = [1];
+  let design = 1;
   const textcolors = [
     "text-white",
     "text-black",
@@ -59,10 +66,10 @@
 </script>
 
 <section class="flex {defaulttextcolor}">
-  <section class="bg-slate-800 w-2/12 text-center text-white">
-    <h1 class="text-2xl p-5">Customize this web page</h1>
-    <p class="text-xl p-1">Background Color</p>
-    <div class="flex flex-wrap gap-1 justify-center">
+  <section class="w-2/12 text-center text-white bg-slate-800">
+    <h1 class="p-5 text-2xl">Customize this web page</h1>
+    <p class="p-1 text-xl">Background Color</p>
+    <div class="flex flex-wrap justify-center gap-1">
       {#each bgcolors as color}
         <button
           class="{color} w-10 h-10 rounded-full"
@@ -70,8 +77,8 @@
         ></button>
       {/each}
     </div>
-    <p class="text-xl p-1">Header Color</p>
-    <div class="flex flex-wrap gap-1 justify-center">
+    <p class="p-1 text-xl">Header Color</p>
+    <div class="flex flex-wrap justify-center gap-1">
       {#each bgcolors as color, i}
         <button
           class="{color} w-10 h-10 rounded-full"
@@ -79,38 +86,38 @@
         ></button>
       {/each}
     </div>
-    <p class="text-xl p-1">Header Text</p>
-    <input type="text" class="text-black p-2 rounded" bind:value={logotext} />
+    <p class="p-1 text-xl">Header Text</p>
+    <input type="text" class="p-2 text-black rounded" bind:value={logotext} />
     <div class="p-2">
       <button
-        class="p-2 w-16 bg-slate-300 text-black rounded"
+        class="w-16 p-2 text-black rounded bg-slate-300"
         on:click={() => {
           logoposition = "justify-start";
         }}>Left</button
       >
       <button
-        class="p-2 w-16 bg-slate-300 text-black rounded"
+        class="w-16 p-2 text-black rounded bg-slate-300"
         on:click={() => {
           logoposition = "justify-center";
         }}>Center</button
       >
       <button
-        class="p-2 w-16 bg-slate-300 text-black rounded"
+        class="w-16 p-2 text-black rounded bg-slate-300"
         on:click={() => {
           logoposition = "justify-end";
         }}>Right</button
       >
     </div>
-    <p class="text-xl p-1">Choose Image</p>
-    <div class=" flex flex-wrap gap-1 justify-center">
+    <p class="p-1 text-xl">Choose Image</p>
+    <div class="flex flex-wrap justify-center gap-1">
       {#each imgdir as img, i}
         <button
-          class="p-2 w-10 bg-slate-300 text-black rounded"
+          class="w-10 p-2 text-black rounded bg-slate-300"
           on:click={() => (defaultimg = img)}>{(i += 1)}</button
         >
       {/each}
     </div>
-    <p class="text-xl p-1">Image Size</p>
+    <p class="p-1 text-xl">Image Size</p>
     <label class="text-black">
       <input
         class="w-16 p-1 rounded"
@@ -121,20 +128,20 @@
       />
       <input type="range" bind:value={imgsize} min="500" max="2000" />
     </label>
-    <p class="text-xl p-1">Banner Title</p>
+    <p class="p-1 text-xl">Banner Title</p>
     <input
       type="text"
-      class="text-black p-2 rounded"
+      class="p-2 text-black rounded"
       bind:value={bannertitle}
     />
-    <p class="text-xl p-1">Banner Description</p>
+    <p class="p-1 text-xl">Banner Description</p>
     <textarea
       type="text"
-      class="text-black p-2 rounded w-64"
+      class="w-64 p-2 text-black rounded"
       bind:value={bannerdes}
     />
-    <p class="text-xl p-1">Title Color</p>
-    <div class="flex flex-wrap gap-1 justify-center">
+    <p class="p-1 text-xl">Title Color</p>
+    <div class="flex flex-wrap justify-center gap-1">
       {#each textcolors as color, i}
         <button
           class="{bgcolors[i]} w-10 h-10 rounded-full"
@@ -142,8 +149,8 @@
         ></button>
       {/each}
     </div>
-    <p class="text-xl p-1">Text Color</p>
-    <div class="flex flex-wrap gap-1 justify-center">
+    <p class="p-1 text-xl">Text Color</p>
+    <div class="flex flex-wrap justify-center gap-1">
       {#each textcolors as color, i}
         <button
           class="{bgcolors[i]} w-10 h-10 rounded-full"
@@ -151,25 +158,69 @@
         ></button>
       {/each}
     </div>
-    <p class="text-xl p-1">Number of Boxes</p>
+    <p class="p-1 text-xl">Number of Boxes</p>
     <button
-      class="p-2 w-16 bg-slate-300 text-black rounded"
+      class="w-16 p-2 text-black rounded bg-slate-300"
       on:click={() => {
         boxes++;
       }}>+</button
     >
     <button
-      class="p-2 w-16 bg-slate-300 text-black rounded"
+      class="w-16 p-2 text-black rounded bg-slate-300"
       on:click={() => {
         boxes--;
       }}>-</button
     >
+    <p class="p-1 text-xl">Design</p>
+    <div class="pb-2">
+      <button
+        class="w-16 p-2 text-black rounded bg-slate-300"
+        on:click={() => {
+          design++;
+        }}>+</button
+      >
+      <button
+        class="w-16 p-2 text-black rounded bg-slate-300"
+        on:click={() => {
+          design--;
+        }}>-</button
+      >
+    </div>
+
+    {#each { length: design } as _, i}
+      <div class="p-2">
+        <button
+          class="w-16 p-2 text-black rounded bg-slate-300"
+          on:click={() => {
+            heros[i] = 1;
+          }}>1</button
+        >
+        <button
+          class="w-16 p-2 text-black rounded bg-slate-300"
+          on:click={() => {
+            heros[i] = 2;
+          }}>2</button
+        >
+        <button
+          class="w-16 p-2 text-black rounded bg-slate-300"
+          on:click={() => {
+            heros[i] = 3;
+          }}>3</button
+        >
+        <button
+          class="w-16 p-2 text-black rounded bg-slate-300"
+          on:click={() => {
+            heros[i] = 4;
+          }}>4</button
+        >
+      </div>
+    {/each}
   </section>
   <section class="w-10/12 {bgcolor} ">
     <div class="h-20 {headercolor} flex items-center {logoposition}">
       <h2 class="text-4xl {logocolor} px-5">{logotext}</h2>
     </div>
-    <div class="flex p-10 gap-10">
+    <div class="flex gap-10 p-10">
       <div class="">
         <img width={imgsize} src={defaultimg} alt="img" />
       </div>
@@ -180,15 +231,28 @@
     </div>
     <section class="text-center">
       <h2 class="text-5xl {defaulttitlecolor}">Lorem ipsum dolor sit amet</h2>
-      <p class="text-xl p-5">
+      <p class="p-5 text-xl">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quo
         assumenda praesentium soluta accusamus
       </p>
-      <div class="flex flex-wrap text-center px-10 justify-center gap-1">
+      <div class="flex flex-wrap justify-center gap-1 px-10 text-center">
         {#each { length: boxes } as _}
           <Icon title={defaulttitlecolor} text={defaulttextcolor}></Icon>
         {/each}
       </div>
+    </section>
+    <section>
+      {#each { length: design } as _, i}
+        {#if heros[i] == 1}
+          <Banner1 color={headercolor}></Banner1>
+        {:else if heros[i] == 2}
+          <Banner2 color={defaulttitlecolor}></Banner2>
+        {:else if heros[i] == 3}
+          <Banner3 color={defaulttitlecolor}></Banner3>
+        {:else if heros[i] == 4}
+          <Banner4 title={defaulttitlecolor} color={headercolor}></Banner4>
+        {/if}
+      {/each}
     </section>
   </section>
 </section>
