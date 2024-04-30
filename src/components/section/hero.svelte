@@ -123,10 +123,10 @@
         class="w-16 p-1 rounded"
         type="number"
         bind:value={imgsize}
-        min="500"
+        min="200"
         max="2000"
       />
-      <input type="range" bind:value={imgsize} min="500" max="2000" />
+      <input type="range" bind:value={imgsize} min="200" max="2000" />
     </label>
     <p class="p-1 text-xl">Banner Title</p>
     <input
