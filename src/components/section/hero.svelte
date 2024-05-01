@@ -10,7 +10,7 @@
   let logocolor = "text-white";
   let logotext = "Lorem ipsum";
   let logoposition = "justify-start";
-  let defaultimg = "/img/g1.jpg";
+  let defaultimg = "/img/g1.webp";
   let imgsize = 800;
   let bannertitle = "Lorem ipsum dolor sit amet";
   let bannerdes =

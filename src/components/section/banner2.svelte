@@ -38,7 +38,7 @@
     >
       <img
         class="object-cover object-center w-full h-full"
-        src="/img/g6.jpg"
+        src="/img/g6.webp"
         alt="stats"
       />
     </div>

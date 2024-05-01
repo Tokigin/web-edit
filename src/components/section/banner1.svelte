@@ -162,7 +162,7 @@
       </div>
       <img
         class="object-cover object-center mt-12 rounded-lg lg:w-3/5 md:w-1/2 md:mt-0"
-        src="/img/g52.jpg"
+        src="/img/g52.webp"
         alt="step"
       />
     </div>

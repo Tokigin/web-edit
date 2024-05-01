@@ -9,7 +9,7 @@
     <img
       class="object-cover object-center w-5/6 mb-10 rounded lg:w-2/6 md:w-3/6"
       alt="hero"
-      src="/img/g72.jpg"
+      src="/img/g72.webp"
     />
     <div class="w-full text-center lg:w-2/3">
       <h1 class="mb-4 text-3xl font-medium title-font sm:text-4xl {color}">
