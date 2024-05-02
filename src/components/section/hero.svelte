@@ -41,7 +41,12 @@
     "text-pink-600",
     "text-rose-600",
   ];
-  const imgdir = ["/img/g1.jpg", "/img/g2.jpg", "/img/g3.jpg", "/img/g4.jpg"];
+  const imgdir = [
+    "/img/g1.webp",
+    "/img/g2.webp",
+    "/img/g3.webp",
+    "/img/g4.webp",
+  ];
   const bgcolors = [
     "bg-white",
     "bg-black",
